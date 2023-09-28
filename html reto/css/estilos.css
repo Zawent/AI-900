@@ -1,0 +1,83 @@
+body{
+    margin: 0px;
+    font-family: 'Mooli', sans-serif;
+}
+
+.title-box{
+    margin: 0% 20%;
+    text-align: center;
+
+}
+
+.title{
+    font-size: 4vw;
+    -webkit-text-stroke: 0.01px rgb(90, 160, 147);
+    color: black;
+}
+
+.img-perro{
+    height: 10vw;
+    border: solid black;
+    border-radius: 10%;
+}
+
+.container-imgs{
+    display: flex;
+    margin: 3% 32vw;
+    justify-content: space-between;
+}
+
+
+.img-pato{
+    transform: rotate(-35deg);
+    margin-top: 3.6vw;
+    height: 10vw;
+    border: solid black;
+    border-radius: 10%;
+}
+
+.img-humano{
+    transform: rotate(35deg);
+    margin-top: 4vw;
+    height: 10vw;
+    border: solid black;
+    border-radius: 10%;
+}
+
+header{
+    top: 0px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 2% 5%;
+    border: solid;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    margin: 0%;
+    background: white;
+    z-index: 100;
+}
+
+.basura {
+    height: 10vw;
+}
+
+.submit-img{
+    border: solid;
+    margin: 5%;
+    width: 20vw;
+    text-align: center;
+}
+
+.funcionalidad{
+    display: flex;
+    margin: 0% 15%;
+}
+
+#link{
+    text-align: center;
+
+}

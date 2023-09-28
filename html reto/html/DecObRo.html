@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detectar Objetos y Rostros</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/faceandObj.js"></script>
+
+    <header>
+        <ul>
+            <a href="index.html"><li>Inicio</li></a>
+            <a href="DecObRo.html"><li>Detectar <br>Rostros / objetos</li></a>
+            <a href="detecAleatorio.html"><li>Detectar aleatorio</li></a>
+        </ul>
+    </header>
+
+    <div class="basura"></div>
+
+    <div class="title-box">
+        <h1 class="title">Identificación de Imagenes</h1>
+    </div>
+
+    <div class="container-imgs">
+        <div>
+            <img class="img-pato" src="../Imgs/duck.jpg" alt="">
+        </div>
+        <div>
+            <img class="img-perro" src="../Imgs/dog.jpg" alt="">
+        </div>
+        <div>
+            <img class="img-humano" src="../Imgs/person.avif" alt="">
+        </div>
+    </div>
+
+    <div class="funcionalidad">
+        <div class="submit-img">
+            <h2 style="font-size: 2vw; text-align: center;">Carga el link</h2>
+            <input id="link" type="url" name="archivosubido"> <br>
+            <button id="analyzeButton" type="button">Comprobar</button>
+        </div>
+    
+        <div class="vista-previa">
+            <img style="max-height: 20vw;" id="vistaP" src="" alt="">
+        </div>
+    </div>
+    
+    
+</body>
+</html>

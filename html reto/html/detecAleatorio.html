@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/imgcontainer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+
+    <title>Tres Divs con Imágenes</title>
+</head>
+
+<body>
+    
+
+    <header>
+        <ul>
+            <a href="index.html">
+                <li>Inicio</li>
+            </a>
+            <a href="DecObRo.html">
+                <li>Detectar <br>Rostros / objetos</li>
+            </a>
+            <a href="detecAleatorio.html">
+                <li>Detectar aleatorio</li>
+            </a>
+        </ul>
+    </header>
+
+    <div class="basura"></div>
+
+    <div class="title-box">
+        <h1 class="title">Identificación de Imagenes</h1>
+    </div>
+
+    <div class="container-imgs">
+        <div>
+            <img class="img-pato" src="../Imgs/duck.jpg" alt="">
+        </div>
+        <div>
+            <img class="img-perro" src="../Imgs/dog.jpg" alt="">
+        </div>
+        <div>
+            <img class="img-humano" src="../Imgs/person.avif" alt="">
+        </div>
+    </div>
+
+
+    <div class="image-container">
+        <div class="image-text-container">
+            <img src="" alt="Imagen 1" id="image1">
+
+            <input type="text" id="customVisionText1" placeholder="Texto de Custom Vision" readonly>
+
+        </div>
+        <div class="image-text-container">
+            <img src="" alt="Imagen 2" id="image2">
+
+            <input type="text" id="customVisionText2" placeholder="Texto de Custom Vision" readonly>
+        </div>
+        <div class="image-text-container">
+            <img src="" alt="Imagen 3" id="image3">
+            <input type="text" id="customVisionText3" placeholder="Texto de Custom Vision" readonly>
+        </div>
+
+    </div>
+
+    <button id="changeImage">Cambiar Imagen</button>
+    <button id="classifyButton" type="button">Comprobar</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/aleatorio.js"></script>
+    
+
+    </div>

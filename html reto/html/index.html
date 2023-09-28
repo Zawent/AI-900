@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificación de imagenes</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/face.js"></script>
+
+    <header>
+        <ul>
+            <a href="index.html"><li>Inicio</li></a>
+            <a href="DecObRo.html"><li>Detectar <br>Rostros / objetos</li></a>
+            <a href="detecAleatorio.html"><li>Detectar aleatorio</li></a>
+        </ul>
+    </header>
+
+    <div class="basura"></div>
+
+    <div class="title-box">
+        <h1 class="title">Identificación de Imagenes</h1>
+    </div>
+
+    <div class="container-imgs">
+        <div>
+            <img class="img-pato" src="../Imgs/duck.jpg" alt="">
+        </div>
+        <div>
+            <img class="img-perro" src="../Imgs/dog.jpg" alt="">
+        </div>
+        <div>
+            <img class="img-humano" src="../Imgs/person.avif" alt="">
+        </div>
+    </div>
+
+    <div class="detection-mode">
+
+        <div class="options-head">
+
+            <div class="type-url">
+                <h1 class="por-url">Por url</h1>
+                <input id="link" type="url" name="archivosubido"><br>
+                <button id="classifyButton" type="button">Comprobar</button>
+            </div>
+
+            <div class="type-file">
+                <h1 class="por-url">Por archivo</h1>
+
+                <input id="imageInput" type="file" name="file"><br>
+
+                <button id="uploadButton" type="button">Comprobar</button>
+            </div>
+
+        </div>
+
+        <div class="vista-prev">
+            <img id="previo" src="" alt="">
+        </div>
+    </div>
+
+    <div class="idiomas">
+        <div id="traduccion">
+            <h1 class="title-traduct">Traducciones</h1>
+            <div class="original">
+                <h1 style="font-size: 2vw;">Original</h1>
+                <input style="width: 20vw; font-size: 2vw; class="traducido" id="text" type="text" disabled>
+                <button id="convertButton-origin" class="sound-traduc">Original</button>
+            </div>
+
+        </div>
+
+        <div class="all-idioms">
+            <div class="Chino">
+                <br><br>
+                <h1 style="font-size: 2vw;">Chino</h1>
+                <div class="text-but">
+                    <input style="width: 20vw; font-size: 2vw; class="traducido" type="text" id="text-CH" disabled><br>
+                    <button id="convertButton-chino" class="sound-traduc">Chino</button>
+                </div>
+            </div>
+
+            <div class="Italiano">
+                <br><br>
+                <h1 style="font-size: 2vw;">Italiano</h1>
+                <div class="text-but">
+                    <input style="width: 20vw; font-size: 2vw;" class="traducido" type="text" id="text-IT" disabled><br>
+                    <button id="convertButton-ital" class="sound-traduc">Italiano</button>
+                </div>
+            </div>
+
+            <div class="Frances">
+                <br><br>
+                <h1 style="font-size: 2vw;">Frances</h1>
+                <div class="text-but">
+                    <input style="width: 20vw; font-size: 2vw;" class="traducido" type="text" id="text-FR" disabled><br>
+                    <button id="convertButton-frances" class="sound-traduc">Frances</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="just-rec-fac">
+        <div class="reconocer-face">
+            <div class="type-url">
+                <h1 class="por-url">Por url</h1>
+                <input type="url" name="archivosubido" id="link2"><br>
+                <button style="width: 15vw; font-size: 2vw; margin-top: 1vw;" id="analyzeButton1" type="button">Comprobar</button>
+            </div>
+
+            <div class="type-file">
+                <h1 class="por-url">Por archivo</h1>
+                <input style="width: 20vw; font-size: 1vw; margin-bottom: 1vw;" id="imageInput2" type="file" name="file"><br>
+                <button style="width: 15vw; font-size: 2vw; margin-bottom: 1vw;" id="uploadButton2" type="button">Comprobar</button>
+            </div>
+        </div>
+
+        <div class="reconocimiento-facial">
+            <div id="vista-prev-2" class="vista-prev-2">
+                <div id="cuadrados-faces" class="cuadrados-faces">
+                    <img id="previo2" src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+        
+    <div class="mas-funciones">
+        <h2 style="text-align: center; font-size: 5vw;">¿Quieres probar mas opciones?</h2>
+
+        <div class="botones">
+            <a href="DecObRo.html">
+                <button id="botonsitos" type="button">Detectar objetos <br> y rostros</button>
+            </a>
+
+            <a href="detecAleatorio.html">
+                <button id="botonsitos" type="button">Detectar <br>perro / pato / persona</button>
+            </a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
